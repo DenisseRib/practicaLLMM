@@ -1,9 +1,93 @@
-*{
-    background-color: rgb(231, 245, 240);
+body{
+    background-color: rgb(216, 254, 255);
 }
 header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+   top: 1em;
+    height: 120px; 
     text-align: center;
 
+}
+#lateral{
+    align-items: center;
+    left: 0px;
+
+}
+#publiIzq {
+    background-color: rgb(244, 192, 220);
+    border: none; 
+    border-radius: 12px;
+    box-shadow: 0 30px 25px rgba(241, 187, 217, 0.609); 
+    padding: 20px;
+    width: 320px;
+    margin-left: 20px;
+    display: inline-block; 
+    vertical-align: top;
+
+  }
+  .pubIzq{
+    position: relative;
+    top: 1em;
+width: 75%;       
+    height: 250px;
+
+    background-size: cover;
+    transition: background-image 0.3s ease;
+background-image: url('img/isolate-90-cfm-1-8-kg.webp');
+}
+
+
+.pubIzq:hover{
+ background-image: url('img/image-563a0185-d672-40aa-a54c-def9e2b7ef01.avif');
+
+}
+h2 {
+   
+  font-family: 'Arial Black', sans-serif;
+ 
+    color: #ea41af;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+#publiIzq button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#publiAbajo{
+    background-color: rgb(244, 192, 220);
+    border: none; 
+    border-radius: 12px;
+    box-shadow: 0 30px 45px rgba(241, 187, 217, 0.609); 
+    padding: 20px;
+    margin-top: 7px;
+    width: 320px;
+    display: inline-block; 
+    vertical-align: top;
+
+  }
+  .pubAbajo{
+    position: relative;
+    top: 1em;
+width: 75%;       
+    height: 250px;
+    background-size: cover;
+    transition: background-image 0.3s ease;
+background-image: url('img/images-EverydaySeamlessWashedCroppedTankGSSetsRedWASHB6B8Z_RCCJ_1108_V2_1920x.webp');
+}
+.pubAbajo:hover{
+ background-image: url('img/images-EverydaySeamlessWashedCroppedTankGSSetsRedWASHB6B8Z_RCCJ_1119_V2_1920x.webp');
+
+}
+#publiAbajo button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 .cabecera{
@@ -11,6 +95,9 @@ header{
      font-style: italic;
    text-transform: uppercase;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    margin-top: 120px;
 }
 header>h1{
   
@@ -20,24 +107,33 @@ header>h1{
   
    width: 25%;
    height: 40px;
-   margin-left: 225px;
+   margin-left: 855px;
    padding-bottom: 0px;
 }
 #menu{
+ 
 padding: 2px;
+margin: auto;
  overflow: hidden;
-
+width: 65%;
   border: 4px dotted rgb(242, 222, 225);
 
 }
-#menu , .opcion, header>h1{ 
-        background-color: rgb(241, 219, 238);
-}
+
 .opcion{
+      
          display: inline-block;
     font-weight: bold;
     text-align: center;
     padding: 25px;
     justify-content: center;
  
+}
+.opcion>a{
+ color: #ea41af;
+}
+a:hover {
+    color: #ff1493;
+    transform: scale(2.0); 
+    text-shadow: 0px 0px 5px rgba(255, 105, 180, 0.3); 
 }
