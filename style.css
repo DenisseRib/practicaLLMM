@@ -1,14 +1,14 @@
 body{
     background-color: rgb(216, 254, 255);
 }
-header{
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-   top: 1em;
-    height: 120px; 
+header {
     text-align: center;
-
+    padding: 0px 0;
+    background-color: #e0faff; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ff69b4;
 }
 #lateral{
     align-items: center;
@@ -90,34 +90,25 @@ background-image: url('img/images-EverydaySeamlessWashedCroppedTankGSSetsRedWASH
     cursor: pointer;
 }
 
-.cabecera{
-    color: palevioletred;
-     font-style: italic;
-   text-transform: uppercase;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.cabecera {
+    color: #eb4799; 
+    font-style: italic;
+    margin-bottom: 25px;
+    font-size: larger;
 }
 main{
     margin-top: 120px;
 }
-header>h1{
-  
-    color:rgb(162, 66, 98);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-size: x-large;
-  
-   width: 25%;
-   height: 40px;
-   margin-left: 855px;
-   padding-bottom: 0px;
+#titulo {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 8.5em;
+    color: #d15e75; 
+    margin-bottom: 5px;
+    text-transform: uppercase;
 }
-#menu{
- 
-padding: 2px;
-margin: auto;
- overflow: hidden;
-width: 65%;
-  border: 4px dotted rgb(242, 222, 225);
-
+#menu {
+    border-top: 1px solid rgba(255, 105, 180, 0.3);
+    padding-top: 15px;
 }
 
 .opcion{
