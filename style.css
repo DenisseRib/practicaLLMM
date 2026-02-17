@@ -17,28 +17,31 @@ header {
 
 
 .lateral {
-    background-color: rgb(244, 192, 220);
+      background-color: #f1a1db;
     border: none;
     border-radius: 12px;
     box-shadow: 0 30px 25px rgba(241, 187, 217, 0.609);
     padding: 20px;
     width: 320px;
     height: 100%;
+    align-items: center;
     margin-left: 20px;
     display: inline-block;
-    vertical-align: top;
+
 
 }
 
 .pubIzq {
-    position: relative;
+     position: relative;
     top: 1em;
     width: 75%;
     height: 250px;
-
     background-size: cover;
     transition: background-image 0.3s ease;
     background-image: url('img/isolate-90-cfm-1-8-kg.webp');
+}
+.pubIzq:hover{
+    background-image: url('img/743715015616N_afront-side.webp');
 }
 
 
@@ -176,17 +179,14 @@ table  tr:hover  {
 
 
 h2 {
-
-
     font-family: 'Arial Black', sans-serif;
-
     color: #ea41af;
     margin-bottom: 15px;
     border-bottom: 2px solid #f0f0f0;
     padding-bottom: 5px;
 }
 
-.lateral button {
+ .boton{
     transition: background-color 0.4s;
     margin-top: 20px;
     padding: 10px 20px;
@@ -217,6 +217,7 @@ h2 {
     margin-bottom: 25px;
     font-size: larger;
     height: 45px;
+      perspective: 1000px;
 }
 
 main {
@@ -249,20 +250,129 @@ main {
     justify-content: center;
 
 }
-
-.slide-fwd-center {
-    animation: slide-fwd-center 1.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.video{
+    margin-top: 30px;
+}
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
-@keyframes slide-fwd-center {
-    0% {
-        transform: translateZ(0);
-    }
-
-    100% {
-        transform: translateZ(190px);
-    }
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
 }
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+.benCard h3{
+   color: #190b19;
+   border: #eb4799 solid 2px;
+   
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.benCard p{
+    font-family: 'Times New Roman', Times, serif;
+   font-size: larger;
+
+
+
+}
+
+
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .opcion>a {
     color: #ea41af;
@@ -334,4 +444,29 @@ transition: transform 0.3s ease , box-shadow 0.3s ease;
 }
 .benCard:hover{
 transform: translateY(-8px)
+}
+.anuncio {
+    background-color: #f1a1db;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+.seccionDerecha img{
+    width: 185px;
+    border-radius: 20%;
+    margin-bottom: 20px;
+}
+.seccionDerecha{
+     background-color: rgb(244, 192, 220);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 30px 25px rgba(241, 187, 217, 0.609);
+    padding: 20px;
+    width: 320px;
+    height: 100%;
+    right: 0px;
+   
+    display: inline-block;
+    gap: 15px;
 }
