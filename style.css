@@ -2,18 +2,23 @@ body {
 background-color:  rgb(244, 192, 220);
     color: #2D2D2D;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(./img/OIP.webp);
+    perspective: 1000;
 }
 nav{
       display: flex;
     align-items: center;
-    color: rgb(37, 8, 8 ) ;
     padding: 10px;
-    height: 25px;
+    height: 105px;
+    width: 85%;
+    background-color: ;
+
     max-width: 1024px;
     margin: 0 auto;
 }
 header {
- 
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+
     display: flex;
     flex-direction: column;
 }
@@ -27,6 +32,7 @@ header nav{
 
 
 }
+
 nav ul{
     float: right;
     list-style: none;
@@ -39,15 +45,19 @@ nav li{
     display: inline;
 }
 nav li a{
+    display: inline-block;
     color: rgb(252, 0, 138);
-    font-size: 2em;
+    font-size: 1em;
     text-decoration: none;
-    line-height: 70px;
-    padding: 15px 10px;
+   
+    transition: transform 0.3s ease;
+
+    padding: 25px 30px;
 }
 nav li a:hover{
-    transition: 5px ease;
-     color: #a29cff;
+color: #f0fc88;
+  transform: scale3d(2, 2, 2);
+ 
 }
 
 .lateral {
@@ -230,9 +240,11 @@ h2 {
 header a{
 
     margin-left: 125px;
-   background-color: #dd9f9f;
    border-radius: 20px;
+   color: #c35272;
+   
 }
+
 .pubAbajo {
     position: relative;
     top: 1em;
@@ -254,25 +266,28 @@ position: fixed;
     left: 0;
     width: 100%;    
     z-index: 9999;   
-   background-color: #FFF5F8;
+   background-color: #f3aac0;
     padding: 15px 0;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
 }
-
-
-nav {
+#barra{
+    border-radius: 45px;
+    margin-left: 185px;
+    align-items: center;
   
-  }
+    background-color: #e9d7d7;
+
+
+}
+
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
-    color: #ffffff !important;
+gap: 20px;
+  
 }
-
-
 
 
 #titulo {
@@ -286,17 +301,6 @@ nav ul {
 }
 
 
-
-.opcion {
-
-    display: inline-block;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 115px;
-    padding: 25px;
-    justify-content: center;
-
-}
 .video{
     margin-top: 30px;
 }
@@ -446,8 +450,12 @@ nav ul {
     
 
 }
+main :hover{
+    transform: rotate3d(-8px);
+}
 main{
-       margin-top: 45px;
+
+       margin-top: 10px;
 }
 main,  header nav{
     display: flex;
@@ -503,11 +511,11 @@ transform: translateY(-8px)
     margin-bottom: 20px;
 }
 .seccionDerecha{
-     background-color: rgb(244, 192, 220);
+    
     border: none;
     border-radius: 12px;
     box-shadow: 0 30px 25px rgba(241, 187, 217, 0.609);
-    padding: 20px;
+    padding: 5px;
     width: 320px;
     height: 100%;
     right: 0px;
