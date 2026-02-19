@@ -312,10 +312,11 @@ body {
         transform: translateX(0);
     }
 }
-.footer-fijo {
+.footerFijo {
     position: fixed;
     bottom: 0;
     left: 0;
+    height: 50px;
     width: 100%;
     background: #3e3131;
     color: #fff;
@@ -333,11 +334,13 @@ body {
     font-size: 14px;
 }
 
-.footer-links a,
-.footer-redes a {
+
+.footerRedes a {
     color: #f2d6d6;
-    right: 0px;
+  text-align: center;
     text-decoration: none;
+   
+    float: right;
   
 }
 
