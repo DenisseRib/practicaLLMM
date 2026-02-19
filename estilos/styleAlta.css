@@ -1,11 +1,6 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
-    color: #333;
-}
 
-.container {
+
+.cont {
     border: #ff4d88 solid 1px;
     border-radius: 25px;
     background: #e98585;
@@ -16,68 +11,51 @@ body {
     transform: translate3d(0, 0, 0);
 
 }
-.container:hover {
+
+.cont:hover {
         transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.603);
-}
-h2 {
-    text-align: center;
-    border-bottom: 2px solid #ff4d88;
-    padding-bottom: 10px;
-    color: #ff4d88;
+    box-shadow: 0 4px 8px rgba(225, 38, 166, 0.611);
 }
 
-.form-group {
-    margin-bottom: 15px;
-}
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
-
-input[type="text"],
-input[type="email"],
-input[type="date"],
-input[type="password"],
-select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    box-sizing: border-box; 
+.contenedorAlta {
+   
+    text-align: center;
+    gap: 15px;
 }
-
-
+.contenedorAlta p{
+    font-style: oblique;
+    font-size: 1.3em;
+    color: #7c5050;
+    margin:  auto;
+    height: 25px;
+    padding: 20px 25px;
+    width: 20%;
+    background-color: #e59d9d;
+    margin-top: 5px;
+    border-radius: 20px;
+     transition: background-color 0.3s ease;
+    
+}
+input:hover {
+   
+    border-color: #ff4d88;
+    box-shadow: 0 0 5px rgba(255, 77, 136, 0.5);
+}
+.contenedorAlta:hover p{
+    transition: cubic-bezier(0.23, 1, 0.320, 1) 0.3s;
+  transform: scale(1.2);
+    background-color: #ff4d88;
+}
 .optional {
     font-weight: normal;
     font-size: 0.85em;
-    color: #666;
+    color: #7c5050;
 }
 
-.btn-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
 
-.btn {
-    padding: 10px 15px;
-    cursor: pointer;
-    border: 1px solid #999;
-    background: #e0e0e0;
-}
-
-.btn-submit {
-    background-color: #ff4d88;
-    color: white;
-    border: none;
-}
-
-.btn-cancel {
-    background-color: #f0f0f0;
-}
-
-.btn:hover {
-    filter: brightness(0.9);
-}

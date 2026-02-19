@@ -1,13 +1,3 @@
-body {
-    background-color: rgba(250, 0, 133, 0.362);
-    color: #2D2D2D;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(./img/OIP.webp);
-
-    margin: 0;
-}
-
-
 h2 {
     font-family: 'Arial Black', sans-serif;
     color: #ea41af;
@@ -16,23 +6,9 @@ h2 {
     padding-bottom: 5px;
 }
 
-
-.cabecera {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-    background-color: #f3aac0;
-    padding: 10px 0;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-
-}
 h3{
     margin-top: 0;
 }
-
 
 
 #titulo {
@@ -112,27 +88,13 @@ header a {
 }
 
 
-main {
-    perspective: 1000;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    width: 100%;
-}
 
 .blogFitness {
     width: 100%;
     padding: 40px 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.imgFooter {
-    width: 325px;
-    height: 150px;
-    padding:0 225px;
-    margin-bottom: auto;
 
-}
 .tituloBlog {
     text-align: center;
     text-transform: uppercase;
@@ -209,61 +171,25 @@ main {
     background-color: #ff9bd4;
     transform: translateY(-2px);
 }
-
-.footer-fijo {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: #3e3131;
-    color: #fff;
-    z-index: 9999;
-    border-top: 1px solid #333;
-    margin-top: 50px;
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+footer {
+    margin: 0;
+    width: 100%;}
+.contenedorPubli{
+    margin-bottom: -165px;
+   gap: 0 75px;
 }
+   .imgFooter{
+   
 
-.footer-mini {
-    margin-top: 20px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
+    width: 255px;
+    height: 112px;
+   } #coca {
+   float: left;
+
+
 }
-
-.footer-mini p {
-    margin: 10px 0;
-}
-
-.footer-links a,
-.footer-redes a {
-    color: #f2d6d6;
-    right: 0px;
-    text-decoration: none;
-  
-}
-
-
-.footer-links a:hover,
-.footer-redes a:hover {
-    color: #ff4f8b;
-}
-
-.footer-redes {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.footer-redes a {
-    color: #c52d7b;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-.footer-redes a:hover {
-    color: #ff8acb;
+#mc{
+   
+ 
+   float: right;
 }
