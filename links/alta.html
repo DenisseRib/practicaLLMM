@@ -4,8 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/estilos/styleAlta.css">
 </head>
-<body>
-    
+<div class="container">
+    <header>
+        <h2>StrongHer</h2>
+        <p>Formulario de Alta</p>
+    </header>
+
+    <form action="index.html" method="GET">
+        
+        <div class="form-group">
+            <label>Apellidos *</label>
+            <input type="text" name="apellidos" required>
+        </div>
+
+        <div class="form-group">
+            <label>DNI *</label>
+            <input type="text" name="dni" required 
+                   pattern="[0-9]{8}[A-Z]" 
+                   title="8 dígitos y una letra mayúscula al final (Ej: 12345678X)">
+        </div>
+
+        <div class="form-group">
+            <label>Dirección *</label>
+            <input type="text" name="direccion" required 
+                   pattern="C\/[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+ Nº[0-9]+ P[a-zA-Z0-9]"
+                   placeholder="C/NombreCalle Nºnum Pletra"
+                   title="Formato: C/NombreCalle Nºnum Pletra">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label>Ciudad *</label>
+                <input type="text" name="ciudad" required>
+            </div>
+            <div class="form-group">
+                <label>Código Postal *</label>
+                <input type="text" name="cp" list="cp-options" required 
+                       pattern="[0-9]{5}" maxlength="5">
+                <datalist id="cp-options">
+                    <option value="28001">
+                    <option value="08001">
+                    <option value="41001">
+                    <option value="46001">
+                    <option value="50001">
+                </datalist>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>País *</label>
+            <input type="text" name="pais" required>
+        </div>
+
+        <div class="form-group">
+            <label class="optional">Fecha de nacimiento (Opcional)</label>
+            <input type="date" name="nacimiento">
+        </div>
+
+        <div class="form-group">
+            <label class="optional">Email (Opcional)</label>
+            <input type="email" name="email" placeholder="correo@correo.es">
+        </div>
+
+        <div class="form-group">
+            <label>Contraseña *</label>
+            <input type="text" name="password" required 
+                   pattern="_[a-zA-Z]{1,7}_[a-zA-Z0-9]{5}&[0-9]{2}"
+                   title="Formato: _Max7Letras_5letrasÓnúmeros&2números">
+        </div>
+
+        <div class="form-group">
+            <label>Sexo *</label>
+            <select name="sexo" required>
+                <option value="">Seleccione...</option>
+                <option value="mujer">Mujer</option>
+                <option value="hombre">Hombre</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Aficiones *</label>
+            <input type="text" name="aficiones" list="hobby-options" required>
+            <datalist id="hobby-options">
+                <option value="Running">
+                <option value="Yoga">
+                <option value="Pesos">
+                <option value="Baile">
+            </datalist>
+            <div class="form-group">
+            <label class="optional">Foto de perfil (Opcional)</label>
+            <input type="file" name="foto" accept="image/*">
+        </div>
+
+        <div class="btn-container">
+            <button type="reset" class="btn btn-clear">Borrar</button>
+            <button type="submit" class="btn btn-submit">Enviar</button>
+            <button type="button" class="btn btn-cancel" onclick="window.location.href='index.html'">Cancelar</button>
+        </div>
+    </form>
+
+        </div>
+
+  
+
 </body>
 </html>
